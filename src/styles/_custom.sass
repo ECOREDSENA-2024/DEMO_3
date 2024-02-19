@@ -1,19 +1,45 @@
-.banner-principal-decorativo
-  &-1
-    animation: float1 3.5s ease-in-out infinite alternate
+.resaltado
+  background-color: #E1F7FA
+  font-weight: bold
+.texto_grande
+  font-size: 30px
+  line-height: 38px
+.tarjeta-verde
+  background-color: #E9F6F5 
+.tarjeta-hover
+  transition: all 0.3s ease-in-out
+  background-color: $color-acento-botones
+  &:hover
+    background-color: $color-acento-contenido
+    transform: scale(1.1)
+.recuadro-verde
+  .w-90
+    width: 90%
+  background-color: #C8E9E6
+  position: relative
+  padding-left: 500px
+  &:before
+    width: 5%
     position: absolute
-    top: 40%
-    right: 50%
-  &-2
-    animation: float1 2.8s ease-in-out infinite alternate
-    position: absolute
-    top: 51%
-    right: 30%
-
-
-@keyframes float1
-  0%
-    transform: translateY(20px)
-
-  100%
-    transform: translateY(0px)
+    content: url(../assets/curso/adorno-recuadro.svg)
+    top: 0
+    left: 0
+    transform: translateX(30%) translateY(-30%)
+  &:after
+    position: absolute  
+    content: ''
+    bottom: 0
+    right: 0
+    background-color: $color-secundario
+    width: 40px
+    height: 43px
+.fas.fa-link
+  background-color: $color-sistema-texto
+  color: $white
+  padding: 8px
+  &:active
+    color: $color-acento-botones
+  &:hover
+    color: $color-acento-botones
+.texto-verde 
+  color: $color-primario
